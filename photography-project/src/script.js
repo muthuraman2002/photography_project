@@ -99,7 +99,7 @@ $(document).ready(function() {
         cursorElements.forEach(cursor => {
 			//  console.log(cursor,100);
 			  if (cursor) {
-				
+		
 				  cursor.style.left = event.clientX + "px";
 				  cursor.style.top = event.clientY + "px";
 			  }
@@ -113,7 +113,6 @@ $(document).ready(function() {
 
     function addHoverClass() {
 		//  console.log(e,115);
-		 
         e.classList.add("hover");
         i.classList.add("hover");
     }
