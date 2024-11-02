@@ -175,6 +175,20 @@ $(document).ready(function() {
     $(".nature-close").on('click', function() {
         $("body").removeClass("nature-on");
     });
+   $(".getposts").on('click',function() {
+    
+       const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+   
+       $.get(apiUrl)
+           .done(function(data) {
+               $('#result').html(JSON.stringify(data, null, 2));
+           })
+           .fail(function() {
+               $('#result').html('Error fetching data.');
+           });
+   
+   })
+    
 
 });
 
