@@ -21,7 +21,7 @@ from sqlalchemy.orm import sessionmaker
 
 # Create a Flask application instance
 app = Flask(__name__)
-port=8000
+port=2644
 # Define a route for the root URL
 
 # Define the database URL and create the engine
@@ -89,13 +89,13 @@ def create_user(name: str, age: int,mail=String,phone=int):
 @app.route('/',methods=['GET','POST'])
 def home():
         if request.method =='POST':
-            create_user('muthu',12,'qbc',1234)
+            # create_user('muthu',12,'qbc',1234)
             pass
             return "Hello, World!"
         elif request.method=='GET':
-            create_user('muthu',12,'qbc',1234)
+            # create_user('muthu',12,'qbc',1234)
             pass
-            return "Hii BRO"
+            return({"data":"Hii BRO"})
 
 
 # Define a route for another URL
