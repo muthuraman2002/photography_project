@@ -21,7 +21,7 @@ from sqlalchemy.orm import sessionmaker
 
 # Create a Flask application instance
 app = Flask(__name__)
-port=2644
+port=5000
 # Define a route for the root URL
 
 # Define the database URL and create the engine
